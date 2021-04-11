@@ -4,7 +4,7 @@
 # Note: The code is written in a simple way, without classes, log files or other utilities, for educational purpose
 # Usage: Fill the missing functions and constants
 
-# TO DO: import modules
+
 import socket
 import os
 
@@ -47,13 +47,13 @@ def get_file_data(filename):
 
 def handle_client_request(resource, client_socket):
     """ Check the required resource, generate proper HTTP response and send to client"""
-    # TO DO : add code that given a resource (URL and parameters) generates the proper response
+
     if resource == '':
         url = DEFAULT_URL
     else:
         url = resource
 
-    # TO DO: check if URL had been redirected, not available or other error code. For example:
+   
 
     if url in REDIRECTION_DICTIONARY.keys():
         # TO DO: send 302 redirection response
@@ -108,7 +108,6 @@ def handle_client(client_socket):
     """ Handles client requests: verifies client's requests are legal HTTP, calls function to handle the requests """
     print('Client connected')
     while True:
-        # TO DO: insert code that receives client request
         try:
             client_request = client_socket.recv(1024).decode()
             valid_http, resource = validate_http_request(client_request)
