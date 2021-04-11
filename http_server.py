@@ -1,5 +1,5 @@
 # Ex 4.4 - HTTP Server Shell
-# Author: First Builder Barak Gonen , Completed by Maoz Shechtman  Friend of the Blue Dragon
+# Author: Maoz Shechtman .
 # Purpose: Provide a basis for Ex. 4.4
 # Note: The code is written in a simple way, without classes, log files or other utilities, for educational purpose
 # Usage: Fill the missing functions and constants
